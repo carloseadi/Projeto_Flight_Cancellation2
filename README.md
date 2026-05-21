@@ -202,6 +202,3 @@ Visualize o projeto completo e os resultados diretamente no seu navegador:
 
 ---
 *Este estudo consolida uma infraestrutura completa de Ciência de Dados ponta a ponta para otimização, predição contínua e mineração descritiva de processos aplicados à malha aérea comercial.*
->>>>>>> Stashed changes
-# Projeto_Flight_Cancellation2
-# Projeto_Flight_Cancellation2
