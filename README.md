@@ -192,14 +192,10 @@ graph TD
 
 ## 🌐 Demonstração Online
 Visualize o projeto completo e os resultados diretamente no seu navegador:
-<<<<<<< Updated upstream
-👉 [Acesse a versão HTML do Notebook](https://carloseadi.github.io/Projeto_Flight_Cancellation/flight-delays-and-cancellations_vf.html)
+👉 [Acesse a versão HTML do Notebook](https://carloseadi.github.io/Projeto_Flight_Cancellation2/flight-delays-and-cancellations_vf_copy.html)
 
 ---
 Este estudo foi desenvolvido para demonstrar a aplicação ponta a ponta de engenharia de dados, **business intelligence avançado e Machine Learning**, atuando diretamente em um gargalo operacional mundial.
-
----
-👉 [Acesse a versão HTML do Notebook](https://carloseadi.github.io/Projeto_Flight_Cancellation/)
 
 ---
 *Este estudo consolida uma infraestrutura completa de Ciência de Dados ponta a ponta para otimização, predição contínua e mineração descritiva de processos aplicados à malha aérea comercial.*
