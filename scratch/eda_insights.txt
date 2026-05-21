@@ -1,0 +1,157 @@
+
+==================== CELL 85 (markdown) ====================
+#### 🗺️ Modelagem Física: Validação de Planejamento Espaço-Temporal
+
+A análise de regressão das dimensões físicas do voo consolida a previsibilidade e a consistência das métricas geográficas e de agendamento do setor:
+
+* **Tempo vs. Espaço:** Os três primeiros cenários provam que o tempo planejado (`SCHEDULED_TIME`), o tempo real de voo (`ELAPSED_TIME`) e o tempo líquido no ar (`AIR_TIME`) são extensões diretas e lineares da distância geográfica (`DISTANCE`) percorrida pela aeronave.
+* **Previsão de Planejamento:** O comportamento dos dados consolida que o tempo real total decorrido segue de perto o planejamento estratégico traçado pelas companhias aéreas.
+* **Desvios de Malha:** As dispersões observadas fora da linha de tendência ideal representam as fricções operacionais, traduzidas pelos minutos adicionais gastos com congestionamentos em solo (táxis longos) ou órbitas de espera aérea determinadas pelo controle de tráfego.
+
+==================================================================
+
+==================== CELL 87 (markdown) ====================
+#### 🛫 Análise de Escala: Impacto da Extensão das Rotas na Pontualidade
+
+A segmentação dos voos por faixas de distância revela um comportamento operacional assimétrico entre voos regionais e voos de longa distância:
+
+* **A Vulnerabilidade de Rotas Curtas:** Existe um padrão nítido de queda progressiva na média de atrasos à medida que a distância do voo aumenta. Os voos **Curtos (< 400 milhas)** registram os piores índices de pontualidade na chegada. Isso ocorre porque essas operações regionais trafegam em espaços aéreos saturados e sofrem de forma direta o impacto dos congestionamentos de solo e pátio nos grandes aeroportos.
+* **Mecânica de Recuperação no Ar:** Em contrapartida, os voos classificados como **Muito Longos (> 1200 milhas)** consolidam-se como os mais eficientes no destino. Como as aeronaves passam uma janela muito maior de tempo em altitude estável de cruzeiro, os pilotos dispõem de margem temporal para aumentar a velocidade ou negociar vetores mais diretos com o controle, conseguindo neutralizar e recuperar os minutos perdidos em solo antes de tocar a pista de destino.
+
+==================================================================
+
+==================== CELL 92 (markdown) ====================
+#### 🛩️ Cronometragem e Operações de Pátio: Componentes do Tempo de Voo
+
+A modelagem linear das variáveis de tempo do ecossistema de transporte aéreo consolida as premissas de agendamento e os impactos causados pelas manobras em solo:
+
+* **Planejamento de Rota:** O comportamento dos dados demonstra que o tempo programado total (`SCHEDULED_TIME`) é estrategicamente construído pelas companhias aéreas com base em uma margem de segurança fixa acrescida acima do tempo líquido esperado no ar (`AIR_TIME`).
+* **O Peso do Solo:** O tempo total decorrido da viagem (`ELAPSED_TIME`) mantém uma relação linear rígida com o tempo real de voo. 
+* **A Fricção de Pátio:** A variação vertical observada na dispersão dos pontos em relação à linha de tendência ideal é causada estritamente pelas flutuações e lentidões nos tempos de táxi e manobra das aeronaves em solo — englobando tanto os procedimentos de partida (`TAXI_OUT`) quanto os de chegada (`TAXI_IN`).
+
+==================================================================
+
+==================== CELL 97 (markdown) ====================
+#### 📅 Análise de Sazonalidade: Comportamento Temporal dos Atrasos ao Longo do Ano
+
+A investigação das métricas distribuídas pelos meses do ano civil revela a presença de padrões cíclicos de estresse e eficiência climática na malha aérea:
+
+* **Picos Sazonais Críticos:** A curva expõe de forma nítida dois momentos de colapso regulatório. O maior pico ocorre em **Junho (9,42 min)**, impulsionado pelas tempestades severas de verão e pelas férias escolares no hemisfério norte. Picos secundários surgem no inverno (entre **Dezembro e Fevereiro**), causados por nevascas que paralisam pistas e pelo alto fluxo de passageiros nos feriados de fim de ano.
+* **A Janela de Máxima Eficiência:** Em contrapartida, **Setembro (-0,66 min)** destaca-se como o mês mais eficiente de toda a operação, registrando a única média negativa do gráfico. Esse período é caracterizado por um clima atmosférico estável e baixa demanda por viagens corporativas.
+* **Diretriz de Negócio:** A calmaria operacional de Setembro configura a janela ideal para que as companhias aéreas executem de forma preventiva as manutenções pesadas programadas de suas frotas, mitigando a indisponibilidade de aviões nos picos de alta temporada.
+
+==================================================================
+
+==================== CELL 100 (markdown) ====================
+#### 🗓️ Padrão Semanal: O Impacto dos Dias Úteis e do Fluxo Corporativo na Pontualidade
+
+A distribuição dos atrasos ao longo dos dias da semana revela como o comportamento e o perfil dos passageiros afetam o estresse da malha aérea:
+
+* **Os Dias Críticos:** O gráfico destaca a **Sexta-feira (6,1 min)** e a **Quinta-feira (5,9 min)** como os dias mais propensos a gargalos operacionais. Esse comportamento é impulsionado pelo pico semanal de viagens de negócios unificado ao fluxo de passageiros saindo para o fim de semana.
+* **A Janela de Alívio:** Por outro lado, o **Sábado (2,4 min)** consolida-se de forma isolada como o dia mais pontual e eficiente de toda a operação aérea.
+* **Explicação Logística:** Essa eficiência de Sábado decorre da redução drástica no volume bruto de voos corporativos. Com menos aeronaves disputando posições, ocorre um alívio imediato sobre a infraestrutura de solo, pátio e controle de tráfego aéreo nacional.
+
+==================================================================
+
+==================== CELL 103 (markdown) ====================
+#### ⏰ Efeito de Saturação Horária: Acúmulo e Propagação de Atrasos ao Longo do Dia
+
+A decomposição dos atrasos na chegada pelas 24 horas do dia revela um padrão clássico de saturação e estresse em cadeia na malha aérea:
+
+* **Zonas de Fluidez Matutina:** Nas primeiras horas da manhã (entre **04h e 07h**), o atraso médio é fortemente negativo. Isso ocorre porque as aeronaves iniciam suas jornadas diárias prontas, higienizadas e posicionadas nos pátios, sem carregar heranças de voos anteriores.
+* **Crescimento Linear Contínuo:** A partir das **08h**, as restrições de tráfego começam a se acumular. Os atrasos médios crescem de forma contínua e linear a cada hora subsequente.
+* **O Pico Crítico Noturno:** O estresse da operação atinge o ápice no final da tarde e início da noite (janela das **18h às 20h**), onde as médias de minutos perdidos chegam ao patamar máximo do dia.
+* **O Efeito Bola de Neve:** Esse comportamento comprova visualmente a propagação de atrasos residuais em cascata. Pequenas perdas de minutos ocorridas nas primeiras pernas de voo acumulam-se progressivamente ao longo da escala à medida que a mesma aeronave realiza múltiplos trechos diários, colapsando a pontualidade no encerramento da malha.
+
+==================================================================
+
+==================== CELL 105 (markdown) ====================
+#### 🌦️ Sazonalidade Climática: O Fenômeno da Desconexão entre Atrasos e Cancelamentos
+
+O cruzamento bidimensional entre as falhas de tempo e as interrupções definitivas de voo revela um comportamento logístico contra-intuitivo nas operações aéreas:
+
+* **A Desconexão Sazonal:** O pior mês em volume de minutos perdidos não reflete o pior mês em cancelamentos de voos.
+* **O Pico de Ruptura Invernal (Fevereiro):** O pico extremo de cancelamentos concentra-se em **Fevereiro (4,9%)**. Esse cenário é motivado por nevascas severas de inverno que bloqueiam fisicamente a infraestrutura, forçando o fechamento completo, seguro e preventivo de pistas inteiras.
+* **O Gargalo Cumulativo de Verão (Junho):** Por outro lado, **Junho** lidera com folga os minutos de atraso acumulados (**9,42 min**), mas sustenta uma taxa de cancelamento baixa.
+* **Explicação Operacional:** Esse padrão prova que o clima de verão (caracterizado por tempestades severas, mas isoladas e rápidas) atrasa, satura e sabota o fluxo de tráfego sem paralisar completamente os aeródromos. Como as aeronaves continuam voando após as janelas de espera, o sistema é forçado a engolir grandes atrasos cumulativos ao longo de toda a malha.
+==================================================================
+
+==================== CELL 107 (markdown) ====================
+#### 🗺️ Mapeamento de Janelas Críticas: O Cruzamento Bidimensional de Tráfego
+
+O mapa de calor expõe os pontos de saturação e fluidez através de quadrantes temporais bem definidos, revelando as faixas horárias de maior vulnerabilidade logística na semana:
+
+* **Zonas de Colapso (Pontos Quentes):** A combinação mais perigosa para a malha ocorre nas tardes e noites de **Quinta e Sexta-feira (especialmente das 16h às 21h)**. Nesses períodos, a saturação atinge o ápice semanal e as médias estouram os limites de tolerância regulamentar.
+* **Zonas de Fluidez (Quadrantes Frios):** Em contrapartida, as **manhãs de qualquer dia útil** e o **Sábado por completo** figuram como os momentos mais pontuais e estáveis de toda a operação.
+* **Diretriz de Negócio:** Os quadrantes frios representam janelas de alta previsibilidade, configurando os horários ideais para que o planejamento de malha aloque *slots* estratégicos ou programe voos de alta sensibilidade para conexões de passageiros.
+
+==================================================================
+
+==================== CELL 108 (markdown) ====================
+### 6.8 Resumo dos Principais Insights
+==================================================================
+
+==================== CELL 110 (markdown) ====================
+### 6.8 Detalhamento dos Componentes de Atraso por Companhia Aérea
+
+> A decomposição das causas de atraso por companhia aérea revela quais empresas sofrem com ineficiência operacional (AIRLINE_DELAY, LATE_AIRCRAFT_DELAY) versus fatores externos (WEATHER_DELAY, AIR_SYSTEM_DELAY). Isso é crítico para recomendações direcionadas.
+==================================================================
+
+==================== CELL 112 (markdown) ====================
+### 6.9 Análise de Padrão do Horário de Partida Planejado
+
+> O campo SCHEDULED_DEPARTURE codifica um número inteiro de 4 dígitos no formato HHMM (por exemplo, 1430 = 14:30). Nós o decodificamos para extrair padrões significativos sobre como o agendamento dos voos ao longo do dia se relaciona com o acúmulo de atrasos.
+==================================================================
+
+==================== CELL 114 (markdown) ====================
+### 6.10 Análise de Gravidade do Atraso
+
+> Nem todos os atrasos são iguais. Nós segmentamos os atrasos em faixas de gravidade (leve 15-30 min, moderado 30-60 min, grave 60-120 min, extremo >120 min) e examinamos como cada faixa se distribui entre companhias aéreas, aeroportos e tempo.
+==================================================================
+
+==================== CELL 116 (markdown) ====================
+### 6.11 Análise de Recuperação em Voo
+
+> Para voos que partem atrasados, alguns recuperam tempo no ar voando mais rápido ou fazendo rotas mais curtas. Quantificar essa recuperação — DEPARTURE_DELAY - ARRIVAL_DELAY — revela o quanto as companhias aéreas conseguem compensar operacionalmente, e se rotas mais longas oferecem mais oportunidade de recuperação.
+==================================================================
+
+==================== CELL 118 (markdown) ====================
+### 6.12 Cascata de Congestionamento no tempo de taxiamento por Hora
+
+> O enfileiramento na pista cresce ao longo do dia. Esta análise mostra como o tempo médio de tempo de taxiamento aumenta hora a hora, confirmando que o congestionamento no solo se acumula e alimenta a cascata de atrasos do período noturno.
+==================================================================
+
+==================== CELL 120 (markdown) ====================
+### 6.13 Sazonalidade de Atraso por Rota — Principais Rotas por Mês
+
+> Algumas rotas apresentam atrasos consistentes durante todo o ano, enquanto outras registram picos apenas no inverno (propensas ao clima) ou no verão (picos de demanda). Combinar rota e mês revela os alvos de agendamento mais acionáveis.
+==================================================================
+
+==================== CELL 122 (markdown) ====================
+### 6.14 Cancelamento vs. Atraso — Efeito Substituição
+
+> As companhias aéreas às vezes cancelam um voo severamente atrasado em vez de operá-lo. Esta análise testa se aeroportos com altos índices de atraso também apresentam altas taxas de cancelamento, ou se estes indicadores funcionam como substitutos (um aumenta à medida que o outro diminui).
+==================================================================
+
+==================== CELL 127 (markdown) ====================
+### 6A.2 Ranking de Confiabilidade das Companhias Aéreas
+==================================================================
+
+==================== CELL 129 (markdown) ====================
+### ✈️ Perfil Corporativo: Benchmarking de Eficiência das Companhias Aéreas
+
+A decomposição tridimensional do desempenho das transportadoras consolida o posicionamento de mercado de cada empresa e expõe os impactos gerados por seus modelos de negócios na malha nacional:
+
+* **Padrão de Pontualidade (Referências Mundiais):** O painel consolida a **Alaska Airlines** e a **Delta Air Lines** como referências em eficiência operacional. Ambas apresentam as menores taxas de atraso do mercado e médias de tempo de chegada próximas ou abaixo de zero (pousos adiantados).
+* **A Disrupção das Desafiantes (*Low-Cost*):** No extremo oposto, companhias focadas no modelo de baixo custo ultra-radical (*Ultra Low-Cost*), como **Spirit** e **Frontier**, sacrificam a pontualidade em prol de uma alta utilização diária das aeronaves. Esse modelo resulta em taxas severas, nas quais quase **30%** de toda a frota pousa violando o limite regulamentar de tolerância.
+* **A Assimetria de Riscos e Cancelamento Preventivo:** O gráfico revela que a **Envoy Air** adota uma estratégia operacional atípica. A empresa apresenta atrasos médios moderados, mas lidera de forma isolada com esmagadores **5,0%** de voos cancelados. Esse padrão indica que a gestão prefere abortar preventivamente voos problemáticos para mitigar a propagação de atrasos residuais pelo resto de sua rede interna.
+
+==================================================================
+
+==================== CELL 130 (markdown) ====================
+### 6A.3 — Análise de Tendências Sazonais
+==================================================================
+
+==================== CELL 132 (markdown) ====================
+### 6A.4 — Detecção do Efeito Cascata de Atrasos (Propagação de Aeronave Atrasada)
+==================================================================
