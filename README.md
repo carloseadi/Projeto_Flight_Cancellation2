@@ -196,8 +196,9 @@ Visualize o projeto completo e os resultados diretamente no seu navegador:
 👉 [Acesse a versão HTML do Notebook](https://carloseadi.github.io/Projeto_Flight_Cancellation/flight-delays-and-cancellations_vf.html)
 
 ---
-*Este estudo foi desenvolvido para demonstrar a aplicação ponta a ponta de engenharia de dados, business intelligence avançado e Machine Learning, atuando diretamente em um gargalo operacional mundial.*
-=======
+Este estudo foi desenvolvido para demonstrar a aplicação ponta a ponta de engenharia de dados, **business intelligence avançado e Machine Learning**, atuando diretamente em um gargalo operacional mundial.
+
+---
 👉 [Acesse a versão HTML do Notebook](https://carloseadi.github.io/Projeto_Flight_Cancellation/)
 
 ---
